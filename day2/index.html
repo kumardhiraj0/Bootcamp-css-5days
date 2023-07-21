@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <style>
+      .zomato-card {
+        width: 450px;
+        border: 1px solid lightgray;
+        border-radius: 14px;
+        padding: 10px;
+        margin: 10px auto;
+      }
+      .zomato-card-img {
+        width: 100%;
+        border-radius: 14px;
+      }
+      .safety {
+        width: 100px;
+        height: 30px;
+      }
+      .zomato-card-header {
+        position: relative;
+      }
+      .Promoted {
+        position: absolute;
+        top: 0;
+        margin: 20px;
+        background-color: rgb(104, 82, 82);
+        padding: 3px;
+        font-size: 20px;
+        width: 100px;
+        text-align: center;
+        color: white;
+      }
+      .discount {
+        position: absolute;
+        bottom: 0;
+        background-color: #4141e1;
+        color: white;
+        font-size: 25px;
+        padding: 6px;
+        margin-bottom: 40px;
+      }
+      .min-left {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 15px;
+        background-color: rgb(255, 255, 255);
+        color: #100f0d;
+        padding: 2px 12px;
+        border-radius: 10px;
+        font-size: 15px;
+      }
+      .text {
+        margin-left: 20px;
+      }
+      .your {
+        margin-left: 120px;
+      }
+
+      /* 2nd part css */
+      .india-card {
+        width: 700px;
+        margin: 60px auto;
+        padding: 10px;
+        position: relative;
+      }
+      .india-card-img {
+        width: 100%;
+        border-radius: 14px;
+      }
+      .india-content {
+        width: 500px;
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */ /* this is for exact center*/
+        color: white;
+        position: absolute;
+        bottom: 60px;
+        margin-left: 80px;
+        text-align: center;
+      }
+      .india-btn {
+        background-color: #fff;
+        padding: 15px 30px;
+        border: none;
+        font-size: 16px;
+        border-radius: 40px;
+      }
+
+      /* 3rd part css */
+      .zomato-card-search {
+        position: relative;
+        width: 450px;
+        border: 1px solid lightgray;
+        border-radius: 14px;
+        padding: 10px;
+        margin: 10px auto;
+      }
+
+      .zomato-card-search-img {
+        width: 100%;
+        border-radius: 14px;
+      }
+      .zomato-content-search {
+        width: 500px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* this is for exact center*/
+        color: white;
+        position: absolute;
+        /* bottom: 60px;
+        margin-left: 80px; */
+        text-align: center;
+      }
+      .input {
+        width: 50%;
+        padding: 8px 8px;
+        margin: 8px 0;
+      }
+
+      /* 4th part */
+      .profile {
+        width: 600px;
+        margin: 60px auto;
+        position: relative;
+      }
+      .bg-img {
+        width: 100%;
+      }
+      .user {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: -40px;
+        margin-left:40%;
+        border: 2px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="zomato-card">
+      <div class="zomato-card-header">
+        <img src="./zomato.avif" class="zomato-card-img" alt="zomato" />
+        <div class="Promoted">Promoted</div>
+        <div class="discount">50% OFF up to 100</div>
+        <div class="min-left">38 min</div>
+      </div>
+      <h2>Center point Restarant</h2>
+      <p>North Indian,Chinese</p>
+      <hr />
+      <img src="./safety.avif" alt="safety" class="safety" /><span class="text"
+        >Follows all Max Safety measures to ensure
+        <p class="your">your food is safe</p></span
+      >
+    </div>
+
+    <!-- 2ndpart -->
+    <div class="india-card">
+      <img src="./water.jpg" class="india-card-img" alt="water" />
+      <div class="india-content">
+        <h1>Explore the diversity of India</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
+          incidunt eos, explicabo magni pariatur sint debitis?
+        </p>
+        <button class="india-btn">Explore Now</button>
+      </div>
+    </div>
+
+    <!-- 3rd part -->
+
+    <div class="zomato-card-search">
+      <img
+        src="./zomato-img.avif"
+        class="zomato-card-search-img"
+        alt="zomato-img"
+      />
+      <div class="zomato-content-search">
+        <h1><strong>zomato</strong></h1>
+        <p>Discover The best food and drinks in Lucknow</p>
+        <i class="fa fa-search" id="seach-logo"></i
+        ><input
+          type="text"
+          name=""
+          id=""
+          placeholder="Search for restaurant,cuisine or a dish"
+          class="input"
+        />
+      </div>
+    </div>
+
+    <!-- 4th part -->
+    <div class="profile">
+      <img
+        src="https://source.unsplash.com/1600x500/?mountains"
+        class="bg-img"
+        alt=""
+      />
+      <img src="./mypic.JPG" alt="" class="user" />
+    </div>
+  </body>
+</html>
